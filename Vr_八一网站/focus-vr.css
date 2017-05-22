@@ -1,0 +1,37 @@
+.focus-vr .focus-viewport { width: 100%; }
+
+.focus-vr .focus-viewport iframe { width: 100%; height: 500px; display: block; }
+
+.focus-vr .focus-nav { overflow: hidden; background: #333; padding: 10px 30px; position: relative; }
+
+.focus-vr .focus-nav ul { margin: 0; list-style: none; padding: 0; width: 2000px; }
+
+.focus-vr .focus-nav ul li { margin: 0 5px; padding: 0; width: 160px; float: left; position: relative; }
+
+.focus-vr .focus-nav ul li img { display: block; cursor: pointer; opacity: 0.5; }
+
+.focus-vr .focus-nav ul li.active img, .focus-vr .focus-nav ul li:hover img { box-shadow: 0 0 10px #FFF; opacity: 1; }
+
+.focus-vr .focus-nav ul:after { content: ""; display: table; clear: both; }
+
+.focus-vr .focus-nav .focus-prev, .focus-vr .focus-nav .focus-next { cursor: pointer; position: absolute; width: 30px; top: 0; bottom: 0; background: #333; opacity: 0.5; z-index: 10; }
+
+.focus-vr .focus-nav .focus-prev:hover, .focus-vr .focus-nav .focus-next:hover { opacity: 1; }
+
+.focus-vr .focus-nav .focus-prev { left: 0; }
+
+.focus-vr .focus-nav .focus-prev:before { border-color: #FFF transparent transparent #FFF; left: 12px; }
+
+.focus-vr .focus-nav .focus-next { right: 0; }
+
+.focus-vr .focus-nav .focus-next:before { border-color: transparent #FFF #FFF transparent; }
+
+.focus-vr .focus-nav .focus-next:before, .focus-vr .focus-nav .focus-prev:before { top: 42px; content: ""; width: 15px; height: 15px; position: absolute; border-style: solid; border-width: 3px; transform: rotate(-45deg); }
+
+@media (max-width: 767px) { .focus-vr .focus-nav { overflow-x: scroll; }
+  .focus-vr .focus-nav .focus-next:before, .focus-vr .focus-nav .focus-prev:before { display: none; } }
+.focus-vr .focus-nav ul li span {position: absolute;bottom: 0;left: 0; font-size: 16px; color: #fff; display: block;
+text-align: center; width: 100%;  height: 25px;}
+.focus-vr .focus-nav ul li.active span {
+    background: rgba(0,0,0,0.5)
+}
